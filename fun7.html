@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function unlucky1(arr) {
+			for (i = 0; i < arr.length; i++){
+				if (arr[i] == 1 && arr[i+1] == 3){
+					return true;
+					break;
+				}
+				else{
+					continue;
+				}
+			}
+			return false;
+		}
+    console.log(unlucky1([1, 3, 4, 5]))
+    console.log(unlucky1([2, 1, 3, 4, 5]))
+    console.log(unlucky1([1, 1, 1]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

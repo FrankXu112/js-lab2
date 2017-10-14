@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function shiftLeft(arr) {
+			if (arr.length > 1){
+				var a  = arr[0]
+				arr.splice(0, 1)
+				arr.push(a)
+				return arr
+			}
+			else{
+				return arr
+			}
+		}
+    console.log(shiftLeft([6, 2, 5, 3]))
+    console.log(shiftLeft([1, 2]))
+    console.log(shiftLeft([1]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function maxTriple(arr) {
+			var new_arr = [arr[0], arr[parseInt(arr.length/2)], arr[arr.length-1]]
+			return Math.max.apply(null, new_arr) 			
+		}
+    console.log(maxTriple([1, 2, 3]))
+    console.log(maxTriple([1, 5, 3]))
+    console.log(maxTriple([5, 2, 3]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

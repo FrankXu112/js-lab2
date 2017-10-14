@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function isEverywhere(arr,nums) {
+			for (i = 0; i < arr.length-1; i++){
+				var result = true;
+				if (arr[i] != nums && arr[i+1] != nums){
+					result = false;
+				}
+			}
+			return result;
+		}
+    console.log(isEverywhere([1, 2, 1, 3], 1))
+    console.log(isEverywhere([1, 2, 1, 3], 2))
+    console.log(isEverywhere([1, 2, 1, 3, 4], 1))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

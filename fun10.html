@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function tenRun(arr) {
+			var size = arr.length;
+			for(let i = 0; i < size; i++){
+				if ((arr[i] % 10 == 0) && (arr[i+1] % 10 != 0)){
+					arr[i+1] = arr[i];
+				}
+			}
+			return arr
+		}
+    console.log(tenRun([2, 10, 3, 4, 20, 5]))
+    console.log(tenRun([10, 1, 20, 2]))
+    console.log(tenRun([10, 1, 9, 20]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

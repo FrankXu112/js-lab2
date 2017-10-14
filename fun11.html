@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function twoTwo(arr) {
+			var result = true
+			while(arr.indexOf(2) >= 0){
+				var a = arr.indexOf(2)
+				arr.splice(a,1)
+				var b = arr.indexOf(2)
+				if(a != b){
+					result = false;
+				}
+				else{
+					arr.splice(b,1)
+				}
+			}
+			return result;
+		}
+    console.log(twoTwo([4, 2, 2, 3]))
+    console.log(twoTwo([2, 2, 4]))
+    console.log(twoTwo([2, 2, 4, 2]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function fizzBuzz(a,b) {
+			arr = []
+			for(let i = a; i < b; i++){
+				if(i % 3 == 0 && i % 5 == 0){
+					arr.push("FizzBuzz");
+				}
+				else if(i % 3 == 0){
+					arr.push("Fizz");
+				}
+				else if(i % 5 == 0){
+					arr.push("Buzz")
+				}
+				else{
+					arr.push(i.toString())
+				}
+			}
+			return arr
+		}
+    console.log(fizzBuzz(1, 6))
+    console.log(fizzBuzz(1, 8))
+    console.log(fizzBuzz(1, 11))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

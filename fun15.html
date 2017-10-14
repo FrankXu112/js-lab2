@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function countClumps(arr) {
+			var count = 0
+			for (let i = 0; i < arr.length; i++){
+				if (arr[i] == arr[i+1] && arr[i+1] != arr[i+2]){
+					count += 1
+				}
+			}
+			return count
+		}
+    console.log(countClumps([1, 2, 2, 3, 4, 4]))
+    console.log(countClumps([1, 1, 2, 1, 1]))
+    console.log(countClumps([1, 1, 1, 1, 1]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

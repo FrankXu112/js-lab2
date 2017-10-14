@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function swapEnds(arr) {
+			var a = arr[0]
+			var b = arr[arr.length-1]
+			arr.splice(0,1)
+			arr.splice(arr.length-1,1)
+			arr.unshift(b)
+			arr.push(a)
+			return arr;
+		}
+    console.log(swapEnds([1, 2, 3, 4]))
+    console.log(swapEnds([1, 2, 3]))
+    console.log(swapEnds([8, 6, 7, 9, 5]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

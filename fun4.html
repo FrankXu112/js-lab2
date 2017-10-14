@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function fix23(arr) {
+			var new_arr = []
+			for (i = 0; i < arr.length; i++){
+				if (arr[i] == 3 && arr[i-1] == 2){
+					new_arr.push(0)
+				}
+				else{
+					new_arr.push(arr[i])
+				}
+			}
+			return new_arr
+		}
+    console.log(fix23([1, 2, 3]))
+    console.log(fix23([2, 3, 5]))
+    console.log(fix23([1, 2, 1]))    
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
